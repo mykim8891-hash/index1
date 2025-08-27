@@ -53,7 +53,6 @@
     </style>
 </head>
 <body>
-
 <div class="login-container">
     <h2>Đăng nhập</h2>
     <div id="error" class="error-msg"></div>
@@ -63,18 +62,14 @@
         <button type="submit">Đăng nhập</button>
     </form>
 </div>
-
 <script>
     // Tài khoản và mật khẩu cố định
     const correctUsername = "admin";
     const correctPassword = "123456";
-
     document.getElementById('loginForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Ngăn form submit mặc định
-
         const username = document.getElementById('username').value.trim();
         const password = document.getElementById('password').value;
-
         if(username === correctUsername && password === correctPassword) {
             // Đăng nhập thành công, chuyển tới trang ThoiTrang(1).html
             window.location.href = "ThoiTrang(1).html";
@@ -84,6 +79,6 @@
         }
     });
 </script>
-
 </body>
 </html>
+
